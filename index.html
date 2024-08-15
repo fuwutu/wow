@@ -11,8 +11,19 @@
 
 <body>
     <div>
+        <div>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#pane-equips">装备</a>
+                </li>
+                <li>
+                    <a class="nav-link" data-bs-toggle="tab" href="#pane-pets">随从</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="tab-content">
-            <div class="tab-pane pane-equips active">
+            <div class="tab-pane active" id="pane-equips">
                 <table id="equip-table" class="table table-hover table-bordered" width="100%">
                     <thead>
                         <tr>
@@ -24,7 +35,7 @@
                     </thead>
                 </table>
             </div>
-            <div class="tab-pane pane-pets">
+            <div class="tab-pane" id="pane-pets">
             </div>
         </div>
     </div>
