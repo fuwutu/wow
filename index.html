@@ -5,8 +5,22 @@
     <meta charset="utf-8">
     <title>异世界勇者</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/jquery-3.7.1.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                cache: true,
+                success: function (json) {
+                    console.log(json);
+                    initTables(json);
+                },
+                url: "data/data.json"
+            });
+        });
+    </script>
 </head>
 
 <body>

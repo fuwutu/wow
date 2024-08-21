@@ -1,0 +1,3 @@
+function initTables(json) {
+
+}
